@@ -1,6 +1,6 @@
 import React from 'react-dom';
 import { screen } from '@testing-library/react';
-import renderWithRouter from '../services/renderWithRouter';
+import renderWithRouter from './Helpers/renderWithRouter';
 import App from '../App';
 
 describe('Teste se a pagina "NotFound" renderiza corretamente.', () => {

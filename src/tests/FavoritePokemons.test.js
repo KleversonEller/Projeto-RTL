@@ -1,7 +1,7 @@
 import React from 'react-dom';
 import { screen } from '@testing-library/react';
 import { FavoritePokemons } from '../components';
-import renderWithRouter from '../services/renderWithRouter';
+import renderWithRouter from './Helpers/renderWithRouter';
 
 const pokemonsMock = require('../Mocks/FavoritesMock');
 
