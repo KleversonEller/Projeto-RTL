@@ -6,8 +6,7 @@ import renderWithRouter from './Helpers/renderWithRouter';
 const pokemonsMock = require('../Mocks/FavoritesMock');
 
 describe('Teste a pagina de "Pokémons Favoritos"', () => {
-  it(`Verifica se é exibido na tela a mensagem 'No favorite pokemon found',
-  se a pessoa não tiver pokémons favoritos.`, () => {
+  it(`Verifica se é exibido na tela a mensagem 'No favorite pokemon found', se a pessoa não tiver pokémons favoritos.`, () => {
     renderWithRouter(<FavoritePokemons />);
     const title = screen.getByText(/No favorite pokemon found/i);
     expect(title).toBeDefined();

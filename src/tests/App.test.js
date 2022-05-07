@@ -22,8 +22,7 @@ describe('Teste se contém um conjunto fixo de links de navegação', () => {
     expect(history.location.pathname).toBe('/');
   });
 
-  it(`Verifica se ao clicar em "About"
-  é direcionado para a rota "/about".`, () => {
+  it(`Verifica se ao clicar em "About" é direcionado para a rota "/about".`, () => {
     const { history } = renderWithRouter(<App />);
     const linkAbout = screen.getByRole('link', { name: /about/i });
     expect(linkAbout).toBeDefined();
@@ -31,8 +30,7 @@ describe('Teste se contém um conjunto fixo de links de navegação', () => {
     expect(history.location.pathname).toBe('/about');
   });
 
-  it(`Verifica se ao clicar em "Favorite Pokémons" 
-  é direcionado para a rota "/about".`, () => {
+  it(`Verifica se ao clicar em "Favorite Pokémons" é direcionado para a rota "/favorites".`, () => {
     const { history } = renderWithRouter(<App />);
     history.push('/about');
     const linkFavorite = screen.getByRole('link', { name: /favorite pokémons/i });

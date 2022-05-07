@@ -4,8 +4,7 @@ import renderWithRouter from './Helpers/renderWithRouter';
 import App from '../App';
 
 describe('Teste se a pagina "NotFound" renderiza corretamente.', () => {
-  it(`Verifica se página contém um heading "h2" com o texto
-  'Page requested not found 😭'.`, () => {
+  it(`Verifica se página contém um heading "h2" com o texto 'Page requested not found 😭'.`, () => {
     const { history } = renderWithRouter(<App />);
     history.push('/url-invalida');
     const title = screen.getByRole('heading', {
@@ -14,8 +13,7 @@ describe('Teste se a pagina "NotFound" renderiza corretamente.', () => {
     expect(title).toBeDefined();
   });
 
-  it(`Verifica se página mostra a imagem
-  'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif'`, () => {
+  it(`Verifica se página mostra a imagem 'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif'`, () => {
     const { history } = renderWithRouter(<App />);
     history.push('/url-invalida');
     const imgNotfound = screen.getByAltText(

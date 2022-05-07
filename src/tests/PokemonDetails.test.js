@@ -10,8 +10,7 @@ beforeEach(() => {
 });
 
 describe('Teste se a pagina "Pokemon Details" renderiza corretamente.', () => {
-  it(`A página deve conter um texto "<name> Details",
-  onde "<name>" é o nome do Pokémon`, () => {
+  it(`A página deve conter um texto "<name> Details", onde "<name>" é o nome do Pokémon`, () => {
     const title = screen.getAllByRole('heading', {
       name: /Pikachu Details/i,
       level: 2,
@@ -19,8 +18,7 @@ describe('Teste se a pagina "Pokemon Details" renderiza corretamente.', () => {
     expect(title).toBeDefined();
   });
 
-  it(`Não deve existir o link de navegação para os detalhes
-  do Pokémon selecionado.`, () => {
+  it(`Não deve existir o link de navegação para os detalhes do Pokémon selecionado.`, () => {
     const linkDetails = screen.queryByRole('link', { name: /More details/i });
     expect(linkDetails).toBe(null);
   });
@@ -33,14 +31,12 @@ describe('Teste se a pagina "Pokemon Details" renderiza corretamente.', () => {
     expect(title).toBeDefined();
   });
 
-  it(`A seção de detalhes deve conter um parágrafo com o resumo do
-  Pokémon específico sendo visualizado.`, () => {
+  it(`A seção de detalhes deve conter um parágrafo com o resumo do Pokémon específico sendo visualizado.`, () => {
     const paragrafo = screen.getByText(/This intelligent Pokémon roasts/i);
     expect(paragrafo).toBeDefined();
   });
 
-  it(`Verifica se existe na página uma seção com os mapas contendo
-  as localizações do pokémon`, () => {
+  it(`Verifica se existe na página uma seção com os mapas contendo as localizações do pokémon`, () => {
     const title = screen.getAllByRole('heading', {
       name: /Game Locations of Pikachu/i,
       level: 2,

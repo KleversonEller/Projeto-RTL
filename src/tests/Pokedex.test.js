@@ -9,8 +9,7 @@ const listaPokemons = require('../Mocks/FavoritesMock');
 const favoriteState = require('../Mocks/FavoriteStetMock');
 
 describe('Teste se a pagina "Pokédex" renderiza corretamente.', () => {
-  it(`Verifica se página contém um heading "h2" com o texto
-  'Encountered pokémons'.`, () => {
+  it(`Verifica se página contém um heading "h2" com o texto 'Encountered pokémons'.`, () => {
     renderWithRouter(<App />);
     const title = screen.getByRole('heading', {
       name: 'Encountered pokémons',
