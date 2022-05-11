@@ -68,7 +68,7 @@ os testes do componente `FavoritePokemons` contem as validações para a pagina 
 ## Técnologias usadas
 
 Testes:
-> Desenvolvido usando: React, RTL (React Testing Library), Jets, JavaScript ES6.
+> Desenvolvido usando: React, RTL (React Testing Library), Jets, JavaScript ES6, Teste E2E.
 
 ## Instalando Dependências
 
